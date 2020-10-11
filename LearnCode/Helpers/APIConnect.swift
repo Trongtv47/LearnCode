@@ -15,6 +15,9 @@ class APIConnect: NSObject {
     static let instance = APIConnect()
     var session = Session.default
     
+    typealias herroCallBack = (_ herro:[Hero]?, _ status: Bool, _ message:String) -> Void
+    
+    var callBack:herroCallBack?
 
     override init() {
         let config = URLSessionConfiguration.default
@@ -25,18 +28,25 @@ class APIConnect: NSObject {
     func getHero() {
         AF.request(baseUrl + heroURL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil, interceptor: nil).response { (responseData) in
             
-            guard let data = responseData.data else { return }
+            guard let data = responseData.data else {
+                self.callBack?(nil, false, "")
+                return
+                
+            }
             
             do {
                 let hero = try JSONDecoder().decode([Hero].self, from: data)
-                print(hero)
+                self.callBack?(hero, true,"")
             } catch {
                 print(error.localizedDescription)
+                 self.callBack?(nil, false, error.localizedDescription)
             }
         }
     }
     
-
+    func completionHandler(callBack: @escaping herroCallBack) {
+          self.callBack = callBack
+      }
     
 }
 

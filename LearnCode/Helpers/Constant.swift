@@ -13,6 +13,6 @@ import Foundation
 var baseUrl = "https://api.opendota.com/api"
 var heroURL = "/heroStats"
 
-
+var baseImgUrl = "https://api.opendota.com"
 
 

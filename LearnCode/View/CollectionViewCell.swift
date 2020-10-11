@@ -21,7 +21,11 @@ class CollectionViewCell: UICollectionViewCell {
 
     
     func configureData(data: Hero) {
-        imgView.image = UIImage(named: data.img)
-        lblName.text = data.name
+
+        imgView.downloaded(from: baseImgUrl + data.img, contentMode: .scaleAspectFill)
+        imgView.layer.cornerRadius = imgView.frame.height / 2
+        lblName.text = data.localizedName
     }
+    
+  
 }

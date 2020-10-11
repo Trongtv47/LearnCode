@@ -11,40 +11,41 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="LearnCode" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="152" height="187"/>
+            <rect key="frame" x="0.0" y="0.0" width="147" height="143"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="152" height="187"/>
+                <rect key="frame" x="0.0" y="0.0" width="147" height="143"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q4O-BN-19b">
-                        <rect key="frame" x="31" y="9" width="90" height="90"/>
+                        <rect key="frame" x="28.5" y="9" width="90" height="90"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="90" id="EHA-Wl-oa4"/>
-                            <constraint firstAttribute="width" constant="90" id="eau-mD-mgU"/>
+                            <constraint firstAttribute="width" constant="90" id="bYG-mh-Yaj"/>
+                            <constraint firstAttribute="height" constant="90" id="nac-gR-Gcd"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK2-U4-we7">
-                        <rect key="frame" x="55" y="108" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK2-U4-we7">
+                        <rect key="frame" x="52.5" y="108" width="42" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="Q4O-BN-19b" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="0vW-9X-Tt5"/>
-                <constraint firstItem="Q4O-BN-19b" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="GsM-T1-xzy"/>
-                <constraint firstItem="KK2-U4-we7" firstAttribute="top" secondItem="Q4O-BN-19b" secondAttribute="bottom" constant="9" id="eFc-45-5kF"/>
-                <constraint firstItem="KK2-U4-we7" firstAttribute="centerX" secondItem="Q4O-BN-19b" secondAttribute="centerX" id="qOh-5r-WcK"/>
+                <constraint firstItem="KK2-U4-we7" firstAttribute="centerX" secondItem="Q4O-BN-19b" secondAttribute="centerX" id="Da6-ET-56M"/>
+                <constraint firstItem="KK2-U4-we7" firstAttribute="top" secondItem="Q4O-BN-19b" secondAttribute="bottom" constant="9" id="ZaX-8Y-iDc"/>
+                <constraint firstItem="Q4O-BN-19b" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="dgk-og-FTM"/>
+                <constraint firstItem="Q4O-BN-19b" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="ivp-x3-nLO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="152" height="187"/>
+            <size key="customSize" width="147" height="143"/>
             <connections>
                 <outlet property="imgView" destination="Q4O-BN-19b" id="3iv-1o-EOM"/>
                 <outlet property="lblName" destination="KK2-U4-we7" id="gkD-ZW-v25"/>
             </connections>
-            <point key="canvasLocation" x="69.565217391304358" y="80.022321428571431"/>
+            <point key="canvasLocation" x="-38.405797101449281" y="65.290178571428569"/>
         </collectionViewCell>
     </objects>
 </document>
