@@ -86,7 +86,24 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("select = \(hero[indexPath.row].localizedName)")
+        if #available(iOS 13.0, *) {
+            guard let vc = storyboard?.instantiateViewController(identifier: "InfoHeroVC") as? InfoHeroVC else { return }
+            
+            vc.name = hero[indexPath.row].localizedName
+            vc.attack = hero[indexPath.row].attackRate
+            vc.agi = hero[indexPath.row].baseAgi
+            vc.armor = hero[indexPath.row].baseArmor
+            vc.enabled = hero[indexPath.row].cmEnabled
+            vc.range = hero[indexPath.row].proBan
+            vc.reles = hero[indexPath.row].projectileSpeed
+            vc.mana = hero[indexPath.row].baseMana
+            vc.img = baseImgUrl + hero[indexPath.row].img
+//            vc.imgHero.downloaded(from: baseImgUrl + hero[indexPath.row].img, contentMode: .scaleAspectFill)
+            
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true, completion: nil)
+        }
+        
     }
     
 }

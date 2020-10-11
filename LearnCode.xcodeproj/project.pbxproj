@@ -19,6 +19,7 @@
 		49AA43AA2532AB550082FF56 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA43A82532AB550082FF56 /* CollectionViewCell.swift */; };
 		49AA43AB2532AB550082FF56 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49AA43A92532AB550082FF56 /* CollectionViewCell.xib */; };
 		49AA43D32532E3BB0082FF56 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA43D22532E3BB0082FF56 /* Extension.swift */; };
+		49AA43D92532F5390082FF56 /* InfoHeroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AA43D82532F5390082FF56 /* InfoHeroVC.swift */; };
 		CF2BC48E34999AB9FB71FEBE /* Pods_LearnCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402D25C6E91850779E6C62FD /* Pods_LearnCode.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		49AA43A82532AB550082FF56 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		49AA43A92532AB550082FF56 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		49AA43D22532E3BB0082FF56 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		49AA43D82532F5390082FF56 /* InfoHeroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoHeroVC.swift; sourceTree = "<group>"; };
 		7F35B016FC458F26BD7D455B /* Pods-LearnCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnCode.release.xcconfig"; path = "Target Support Files/Pods-LearnCode/Pods-LearnCode.release.xcconfig"; sourceTree = "<group>"; };
 		DE103771C30A7309384B3B3B /* Pods-LearnCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnCode.debug.xcconfig"; path = "Target Support Files/Pods-LearnCode/Pods-LearnCode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				49AA438E253286320082FF56 /* ViewController.swift */,
+				49AA43D82532F5390082FF56 /* InfoHeroVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				49AA43AA2532AB550082FF56 /* CollectionViewCell.swift in Sources */,
 				49AA438D253286320082FF56 /* SceneDelegate.swift in Sources */,
 				49AA43A3253289750082FF56 /* Hero.swift in Sources */,
+				49AA43D92532F5390082FF56 /* InfoHeroVC.swift in Sources */,
 				49AA43A725328A500082FF56 /* Constant.swift in Sources */,
 				49AA43D32532E3BB0082FF56 /* Extension.swift in Sources */,
 			);
